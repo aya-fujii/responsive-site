@@ -1,0 +1,135 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    background-color: #fffaf0;
+}
+
+a:visited
+{
+    color: #14c0c9;
+}
+a:hover
+{
+    color: #0f949b;
+}
+a:active
+{
+    color: #27e0e9
+}
+
+h1{
+    color: #bdb76b;
+    font-size:200% ;
+    font-family:'游明朝体', 'Yu Mincho','ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ', Meiryo, serif;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+h2{
+    color: #bdb76b;
+    font-size:140% ;
+    font-family:'游明朝体', 'Yu Mincho','ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ', Meiryo, serif;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 6px;
+}
+.main_img{
+    background-image:url("../images/main.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contents
+{
+    background-color: #DDD5BE;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding: 20px;
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column); 
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+p{
+    color: #778899; 
+}
+
+.box{
+    margin: 10px;
+    padding: 15px;
+    background-color: #fdfcf6;
+    flex: 1;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+@media (max-width:768px) {
+  .contents {
+    flex-direction: column;
+    }
+}
+  a:hover {
+    text-decoration: underline; }
+
+
+.contact a{
+    background-color: #fc2;
+    display: block;
+    width: 220px; /* 幅 */
+    height: 20px; /* 高さ */
+    margin: 20px 20px 0 0; /* 要素の外側の余白 */
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.img{
+    margin: 4px;
+    padding: 4px;
+    width: 100%；
+}
+
+.text{
+    text-align: left;
+}
+
+footer{
+  background-color: #fdfcf6;
+  padding: 10px 0;
+  text-align: center;
+  color: #DDD5BE; }
+
+@media (min-width: 1025px) {
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; 
+      
+  }
