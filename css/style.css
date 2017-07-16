@@ -26,7 +26,7 @@ a:hover
 }
 a:active
 {
-    color: #27e0e9
+    color: #bdb76b
 }
 
 h1{
@@ -60,20 +60,8 @@ h2{
     text-align: center;
     justify-content: space-between;
     display: flex;
-    flex-direction: row;
-    padding-top: 60px;
-    padding: 20px;
-    @include display-flex;
-    justify-content: space-between;
-    @include flex-direction(column); 
+    padding: 60px 20px 20px;
 }
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
 
 p{
     color: #778899; 
@@ -88,10 +76,16 @@ p{
        -moz-border-radius: 4px;
             border-radius: 4px;
 }
+
+/* Mobile */
 @media (max-width:768px) {
   .contents {
     flex-direction: column;
     }
+ .main_img {
+     height: 250px;
+ }
+    
 }
   a:hover {
     text-decoration: underline; }
@@ -113,7 +107,7 @@ p{
 .img{
     margin: 4px;
     padding: 4px;
-    width: 100%；
+    width: 100%;
 }
 
 .text{
@@ -131,5 +125,5 @@ footer{
   ------------------------------------------------------------*/
   a:hover {
     text-decoration: underline; 
-      
-  }
+}
+}
